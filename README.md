@@ -1,3 +1,5 @@
+<img width="1301" height="744" alt="Apricot" src="https://github.com/user-attachments/assets/5a65c01e-e254-4b06-82ad-71c168dd0ff0" />
+
 # Apricot
 
 A 3D engine for Expo apps on iOS and Android: React components for scenes,
@@ -5,6 +7,12 @@ shapes, models, cameras, lights and motion, rendered with three.js on
 WebGPU (react-native-webgpu).
 
 Documentation: https://matthiasbrandolin.dev/apricot
+
+## Try it on the web
+
+https://github.com/user-attachments/assets/e333b602-5335-481d-b0fc-a19a389afce0
+
+Playground: https://playground.matthiasbrandolin.dev/
 
 ## Packages
 
