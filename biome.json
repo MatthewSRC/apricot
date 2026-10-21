@@ -1,0 +1,51 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/coverage",
+      "!**/.expo",
+      "!**/ios",
+      "!**/android",
+      "!pnpm-lock.yaml"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 110
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "linter": {
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/playground/src/scenes/**", "apps/playground/src/app/**", "recipes/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "paths": {
+                  "three": "Scenes use Apricot, not three.js directly: shapes, materials (side, vertexColors), <Instances> children, <Model ground>, SceneObject refs. Build custom geometry in a separate module.",
+                  "three/webgpu": "Scenes use Apricot, not three.js directly: shapes, materials (side, vertexColors), <Instances> children, <Model ground>, SceneObject refs. Build custom geometry in a separate module.",
+                  "three/tsl": "Scenes use Apricot, not three.js directly: shapes, materials (side, vertexColors), <Instances> children, <Model ground>, SceneObject refs. Build custom geometry in a separate module."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

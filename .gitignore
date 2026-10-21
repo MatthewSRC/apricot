@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.expo/
+ios/
+android/
+*.log
+*.tsbuildinfo
+expo-env.d.ts
+coverage/
+# Playground models that must not be committed (see apps/playground/assets/local/README.md).
+apps/playground/assets/local/*
+!apps/playground/assets/local/README.md

@@ -1,0 +1,83 @@
+{
+  "name": "@apricotjs/metro",
+  "version": "0.1.0",
+  "description": "Metro config and model tooling for apps using the Apricot 3D engine.",
+  "license": "MIT",
+  "homepage": "https://matthiasbrandolin.dev/apricot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewSRC/apricot.git",
+    "directory": "packages/metro"
+  },
+  "bugs": "https://github.com/MatthewSRC/apricot/issues",
+  "keywords": [
+    "metro",
+    "expo",
+    "gltf",
+    "3d"
+  ],
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": [
+    "src",
+    "!src/**/__tests__",
+    "!src/**/*.test.*"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "peerDependencies": {
+    "three": ">=0.186.0",
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "draco3dgltf": "1.5.7",
+    "meshoptimizer": "1.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@gltf-transform/core": {
+      "optional": true
+    },
+    "@gltf-transform/extensions": {
+      "optional": true
+    },
+    "@gltf-transform/functions": {
+      "optional": true
+    },
+    "draco3dgltf": {
+      "optional": true
+    },
+    "meshoptimizer": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "@webgpu/types": "0.1.74",
+    "vitest": "^5.0.3",
+    "three": "0.186.1",
+    "@types/node": "^22",
+    "@vitest/coverage-v8": "^5.0.3",
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "draco3dgltf": "1.5.7",
+    "meshoptimizer": "1.3.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./models": {
+      "types": "./src/models.d.mts",
+      "default": "./src/models.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "apricot-models": "src/cli.mjs"
+  }
+}

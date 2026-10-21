@@ -1,0 +1,62 @@
+{
+  "name": "@apricotjs/core",
+  "version": "0.1.0",
+  "description": "The Apricot 3D engine without React: scenes, rendering, cameras, placement and motion.",
+  "license": "MIT",
+  "homepage": "https://matthiasbrandolin.dev/apricot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewSRC/apricot.git",
+    "directory": "packages/core"
+  },
+  "bugs": "https://github.com/MatthewSRC/apricot/issues",
+  "keywords": [
+    "3d",
+    "webgpu",
+    "three",
+    "engine"
+  ],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src",
+    "!src/**/__tests__",
+    "!src/**/*.test.*"
+  ],
+  "sideEffects": [
+    "src/polyfills.ts",
+    "src/index.ts",
+    "src/models.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "fast-text-encoding": "^1.0.6"
+  },
+  "peerDependencies": {
+    "react-native-webgpu": ">=0.12.1",
+    "three": ">=0.186.0"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "@webgpu/types": "0.1.74",
+    "vitest": "^5.0.3",
+    "three": "0.186.1",
+    "@types/three": "0.186.0",
+    "react-native-webgpu": "0.12.1",
+    "react-native": "0.86.3",
+    "@vitest/coverage-v8": "^5.0.3",
+    "fflate": "^0.8.3"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./models": "./src/models.ts",
+    "./layout": "./src/layout.ts",
+    "./png": "./src/png.ts",
+    "./package.json": "./package.json"
+  }
+}

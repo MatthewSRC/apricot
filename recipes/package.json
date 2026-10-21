@@ -1,0 +1,17 @@
+{
+  "name": "@apricotjs/recipes",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Apricot recipes: code to copy into an app.",
+  "license": "MIT",
+  "dependencies": {
+    "@apricotjs/assets": "workspace:*",
+    "@apricotjs/react-native": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-native": ">=0.86.0",
+    "react-native-gesture-handler": ">=2.32.0",
+    "react-native-reanimated": ">=4.2.1"
+  }
+}
